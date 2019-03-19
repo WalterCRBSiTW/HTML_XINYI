@@ -1,0 +1,17 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.card-deck a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 560px) {
+  #ad-carousel h1 {
+    font-size: 2rem;
+  }
+  #ad-carousel .btn {
+    margin-top: 0 !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
