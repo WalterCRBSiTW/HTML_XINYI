@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/styles.scss">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>信義房屋 實作</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="../images/logo.png"/></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">買屋</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">賣屋</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">社區</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">成交行情</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">房訊知識</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">租屋</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">家居生活</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">門市據點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">人才招募</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">企業社會責任</a>
+          </li>
+        </ul>
+        <span class="navbar-text mr-1">會員專區</span>
+        <div class="btn-group">
+          <!--會員專區的下拉是選單-->
+          <button
+            type="button"
+            class="btn btn-dark dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-user"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">登入/註冊</a>
+            <a class="dropdown-item" href="#">網路客服</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="jumbotron jumbotron-fluid mb-0"
+      style="background: url('images/bg-header.jpg'); background-size: cover;"
+    >
+      <div class="container">
+        <h1
+          class="text-white text-center mb-5 "
+          style="text-shadow: rgba(0, 0, 0,.8) 0 0 8px;"
+        >
+          <span class="mr-4 d-inline-block">為了家</span>
+          <!--d-inline-block 可以讓文字在縮減視窗寬度時 避免折行-->
+          <span class="d-inline-block">還可以更好</span>
+        </h1>
+        <div class="card" style="opacity:0.9">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">中古案</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">新建案</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">海外置產</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle btn-sm"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    進階篩選
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm ml-2">
+                搜尋
+              </button>
+            </div>
+            <small class="form-text text-muted"
+              >請輸入路街、社區、關鍵字或物件編號</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-4" style="background: url('images/bg-map.png'); background-size: cover;">
+      <div class="container">
+        <h2 class="text-center mb-4 h3">海外置產說明會</h2>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <img src="images/img-japan.jpg" alt="日本" class="w-100 mb-4" />
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img
+              src="images/img-malaysia.jpg"
+              alt="馬來西亞"
+              class="w-100 mb-4"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center mb-4 h3">優質好宅</h2>
+        <div class="card-deck">
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top"
+                src="images/img-selected-1.jpg"
+                alt="Card image cap"
+              />
+              <div
+                class="card-header text-center"
+                style="background-color:#40C2A0"
+              >
+                低總價宅
+              </div>
+              <div class="card-body">
+                <p class="card-text background-#40C2A0">
+                  精選各區域低總價物件，近捷運、學校、公園等，讓你找到滿意的低價好宅，把握好房趁現在!...
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top"
+                src="images/img-selected-2.jpg"
+                alt="Card image cap"
+              />
+              <div
+                class="card-header text-center"
+                style="background-color:#60AEDD"
+              >
+                信義APP
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  信義房屋APP「即時聊、即時推、即時查」讓你找屋省心力，購售需求一次滿足，關於家，找信義聊聊
+                </p>
+              </div></a
+            >
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top"
+                src="images/img-selected-3.jpg"
+                alt="Card image cap"
+              />
+              <div
+                class="card-header text-center"
+                style="background-color:#FF9275"
+              >
+                商辦精選
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  如何區分辦公大樓等級?常見可分為A、B、C級大樓，幾個重要指標讓你快速了解！
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
