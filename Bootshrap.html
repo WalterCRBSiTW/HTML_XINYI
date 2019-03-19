@@ -90,8 +90,20 @@
             <i class="fas fa-user"></i>
           </button>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">登入/註冊</a>
-            <a class="dropdown-item" href="#">網路客服</a>
+            <a
+              class="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#login"
+              >登入/註冊</a
+            >
+            <a
+              class="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#signup"
+              >網路客服</a
+            >
           </div>
         </div>
       </div>
@@ -322,7 +334,7 @@
           <img class="w-100" src="images/img-hot-1.jpg" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text text-dark">
-                一站涵蓋信義成交、實價登錄行情，提供即時且完整的房屋成交資訊與行情趨勢！
+              一站涵蓋信義成交、實價登錄行情，提供即時且完整的房屋成交資訊與行情趨勢！
             </p>
           </div>
         </a>
@@ -334,7 +346,7 @@
           <!--card-img-top 會讓圖片有圓腳 所以要刪掉; w-100 讓圖片百分百填滿 避免拉長-->
           <div class="card-body">
             <p class="card-text text-dark">
-                最新房市新聞、不動產評論、專題報導、區域動態，豐富的買屋賣屋租屋與居家知識！
+              最新房市新聞、不動產評論、專題報導、區域動態，豐富的買屋賣屋租屋與居家知識！
             </p>
           </div>
         </a>
@@ -345,7 +357,7 @@
           <img class="w-100" src="images/img-hot-3.jpg" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text text-dark">
-                室內設計、裝潢、居家布置等生活資訊。家具、清潔、修繕訊息給您居家生活實用訊息。
+              室內設計、裝潢、居家布置等生活資訊。家具、清潔、修繕訊息給您居家生活實用訊息。
             </p>
           </div>
         </a>
@@ -441,6 +453,128 @@
         </div>
       </div>
     </div>
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#log-in"
+                  >登入</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="pill" href="#signup">註冊</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body tab-content">
+            <form class="tab-pane fade show active" id="log-in">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="請輸入 email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">密碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="請輸入密碼"
+                />
+                <small class="form-text text-muted"
+                  >6~30個英數字元，分大小寫</small
+                >
+              </div>
+              <div>
+                <a href="#">忘記密碼</a>
+              </div>
+              <button type="submit" class="btn btn-success btn-block mt-4">
+                登入
+              </button>
+            </form>
+            <form class="tab-pane fade" id="signup">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="請輸入 email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">密碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="請輸入密碼"
+                />
+                <small class="form-text text-muted"
+                  >6~30個英數字元，分大小寫</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">再次輸入密碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="請再次輸入密碼"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">姓名</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="請輸入姓名"
+                />
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >我已閱讀並同意信義房屋網站的
+                  <span><a href="#">服務條款</a></span>
+                  與
+                  <span><a href="#">隱私權聲明</a></span></label > 
+              </div>
+              <button type="submit" class="btn btn-success btn-block mt-4">
+                註冊
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -459,5 +593,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function() {
+        $("#myInput").trigger("focus");
+      });
+    </script>
   </body>
 </html>
