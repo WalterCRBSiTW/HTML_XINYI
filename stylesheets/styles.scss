@@ -13,3 +13,8 @@ body {
         margin-top: 0 !important;
     }
 }
+
+.news-list li::before {
+    content: "˙";
+    color: #fff;
+}
